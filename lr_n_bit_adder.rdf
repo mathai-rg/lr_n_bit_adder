@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2022.1.0.52.3" title="lr_n_bit_adder" device="LIFCL-17-9MG121C" performance_grade="9_High-Performance_1.0V" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="n_bit_adder" top="n_bit_adder"/>
+        <Source name="source/impl_1/top_n_bit_adder.v" type="Verilog" type_short="Verilog">
+            <Options top_module="n_bit_adder"/>
+        </Source>
+        <Source name="n_bit_adder_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="n_bit_adder_sim/n_bit_adder_sim.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lr_n_bit_adder1.sty"/>
+</RadiantProject>
